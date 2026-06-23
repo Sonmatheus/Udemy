@@ -12,6 +12,6 @@ console.log('O filho de', nome ,'SE CHAMA EDUARDO')
 
 //Não pode começar o nome de uma variável com um número
 //Não podem conter espaços ou traços
-// Utilizamos cameclase
 //case-sensitive
+// Utilizamos cameclase
 //NÃO UTILIZE VAR, UTILIZE LET.
