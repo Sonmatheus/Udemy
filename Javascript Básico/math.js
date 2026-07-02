@@ -1,5 +1,5 @@
 let num1 = 9.221234876
-
+//console.log(Math.sqrt(2) +num1) //Raiz quadrada
 //let num2 = Math.floor(num1) //arredonda pra baixo o número
 //let num2= Math.ceil(num1) // arredonda para cima o número
 //let num2= Math.round(num1) //arredonda pro numero mais próximo
