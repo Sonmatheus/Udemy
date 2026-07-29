@@ -13,14 +13,23 @@
 // console.log(pessoa1.nome, pessoa2.nome)
 
 //---------------------------
-const pessoa1 = {
-    nome: 'Luiz',
-    sobrenome: 'miranda',
-    idade: 25,
+// const pessoa1 = {
+//     nome: 'Luiz',
+//     sobrenome: 'miranda',
+//     idade: 25,
 
-   fala (){
-    console.log ('olá mundo!')
-   }
+//    fala (){
+//     console.log ('olá mundo!')
+//    }
 
-} 
-pessoa1.fala()
+// } 
+// pessoa1.fala()
+
+
+const pessoa ={
+ nome:"Bernardo" ,
+ Idade: 23,
+ jogos: ["Minecraft","Project Zomboid","Loop Hero"]
+}
+    
+console.log(pessoa)
