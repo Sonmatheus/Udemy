@@ -56,3 +56,11 @@ form button {
 form button:hover {
   background: var(--primary-color-darker);
 }
+
+table{
+  border-spacing: 15px 8px;
+  
+}
+td,th{
+  padding: 1px 30px;
+}
