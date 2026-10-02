@@ -1,31 +1,36 @@
 const Peso=document.getElementById('Peso')
-const pesoEmNumero = Number(Peso.value)
+
 
 const Altura=document.getElementById('Altura')
-const AlturaemNumero= Number(Altura.value)
+
 
 const Botao=document.getElementById('Button')
-Botao.addEventListener("click", (e)=>{
+Botao.addEventListener("click", (e)=>{  
  e.preventDefault()
-});
+ const pesoEmNumero = Number(Peso.value)
+ const AlturaemNumero= Number(Altura.value)
+ const resultado= document.getElementById('Resultado')
+ let IMC = pesoEmNumero/ (AlturaemNumero * AlturaemNumero)
 
-let IMC = pesoEmNumero/ (AlturaemNumero * AlturaemNumero)
-const resultado= document.getElementById('Resultado')
-resultado.textContent= IMC
-
+ resultado.textContent= IMC
 if(IMC < 18.5){
-resultado.textContent='Abaixo do peso'
+resultado.textContent=`Seu IMC e: ${IMC.toFixed(2)} - Abaixo do peso`
 }else if (IMC >= 18.5 && IMC <= 24.9){
-    resultado.textContent="Peso normal"
+    resultado.textContent=`Seu IMC e: ${IMC.toFixed(2)} - Peso normal`
 }else if (IMC >= 25 && IMC <= 29.9){
-    resultado.textContent="Sobrepeso"
+    resultado.textContent=`Seu IMC e:${IMC.toFixed(2)} - Sobrepeso`
 }else if (IMC >= 30 && IMC <= 34.9){
-    resultado.textContent="Obesidade grau 1"
+    resultado.textContent=`Seu IMC e: ${IMC.toFixed(2)} - Obesidade grau 1`
 }else if (IMC >= 35 && IMC <= 39.9){
-    resultado.textContent="Obesidade grau 2"
+    resultado.textContent=`Seu IMC e: ${IMC.toFixed(2)} - Obesidade grau 2`
 }else if (IMC > 40){
-    resultado.textContent="Obesidade grau 3"
-}else {
-    resultado.textContent ="Nenhum valor digitado"
+    resultado.textContent=`Seu IMC e: ${IMC.toFixed(2)} - Obesidade grau 3`
+}else{
+    resultado.textContent=`Nenhum valor digitado`
 }
+
+
+
+
+})
 
